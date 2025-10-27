@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+.upper{
+    box-shadow: 10px 10px 40px #000000;
+}
+
+.sha{
+    box-shadow: 0 5px 12px #000000;
+}
+
+.scroll::-webkit-scrollbar{
+    width: 5px;
+}
+
+.scroll::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Background of the scrollbar track */
+    border-radius: 5px;
+}
+
+.scroll::-webkit-scrollbar-thumb {
+    background: #888; 
+    border-radius: 5px;
+}
+
+.scroll::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.shad{
+    box-shadow: 4px 6px 25px #000;
+}
