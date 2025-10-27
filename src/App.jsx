@@ -1,6 +1,6 @@
-import { ArrowLeft, ArrowRight, CircleQuestionMark, LayoutGrid, Plus } from "lucide-react";
-import { motion } from "motion/react";
+import { ArrowLeft, ArrowRight, Plus } from "lucide-react";
 import React, { useState } from "react";
+import Side from "./components/Side";
 
 const App = () => {
   const [currentTab, setCurrentTab] = useState("About Me");
@@ -14,11 +14,7 @@ const App = () => {
         <div className="h-[80%] w-[55%] border border-blue-500 rounded-[28px]"></div>
         <div className="h-[80%] w-[45%] flex flex-col gap-5 rounded-[28px]">
           <div className="upper py-6 px-4 h-[50%] bg-[#363C43] rounded-[28px] flex items-start justify-between">
-            <div className="h-full flex flex-col justify-between">
-              <CircleQuestionMark className="text-[#929CA6]" />
-              <LayoutGrid className="text-[#929CA6]" />
-              <span></span>
-            </div>
+            <Side />
             <div className="ml-5 mr-10 w-full">
               <div className="bg-[#171717] h-15 rounded-2xl flex items-center gap-2 px-2">
                 {btns.map((btn, index) => (
@@ -64,11 +60,7 @@ const App = () => {
           </div>
           <hr className="h-2 rounded-2xl w-[80%] mx-auto bg-[#363C43] upper" />
           <div className="upper py-6 px-4 h-[50%] bg-[#363C43] rounded-[28px] flex items-start justify-between">
-            <div className="h-full flex flex-col justify-between">
-              <CircleQuestionMark className="text-[#929CA6]" />
-              <LayoutGrid className="text-[#929CA6]" />
-              <span></span>
-            </div>
+            <Side />
             <div className="ml-5 mr-10 w-full">
               <div className="flex items-center justify-between mr-4">
                 <button className="bg-black text-white px-8 py-3 text-lg font-semibold rounded-2xl">
